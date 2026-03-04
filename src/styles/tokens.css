@@ -1,0 +1,113 @@
+/* Design tokens for phuocEco Academy landing */
+
+:root {
+  /* Core theme tokens (light) */
+  --bg: #f3f4f6;
+  --bg-muted: #f8f9fa;
+  --bg-contrast: #0f172a;
+  --card: #ffffff;
+
+  --text: #111827;
+  --text-muted: #6b7280;
+  --text-on-contrast: #f9fafb;
+
+  --accent: #00c9a7;
+  --accent-soft: rgba(0, 201, 167, 0.08);
+  --accent-border: rgba(0, 201, 167, 0.35);
+
+  --eco: #16a34a;
+  --eco-soft: #dcfce7;
+
+  --border-subtle: #e5e7eb;
+
+  /* Spacing (8px grid system) */
+  --space-1: 0.5rem;  /* 8px */
+  --space-2: 1rem;    /* 16px */
+  --space-3: 1.5rem;  /* 24px */
+  --space-4: 2rem;    /* 32px */
+  --space-5: 3rem;    /* 48px */
+  --space-6: 4rem;    /* 64px */
+  --space-7: 6rem;    /* 96px */
+
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding-x: 1.5rem;
+
+  /* Section vertical rhythm */
+  --section-padding-y-mobile: var(--space-5); /* 48px */
+  --section-padding-y-tablet: var(--space-6); /* 64px */
+  --section-padding-y-desktop: var(--space-7); /* 96px */
+
+  /* Border radius */
+  --radius-md: 0.75rem; /* 12px */
+  --radius-lg: 1rem;    /* 16px */
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.06);
+  --shadow-subtle: 0 10px 25px rgba(15, 23, 42, 0.04);
+
+  /* Typography scale */
+  --font-size-h1: clamp(3.5rem, 5vw, 4rem); /* 56–64px */
+  --font-size-h2: 2.5rem; /* 40px */
+  --font-size-h3: 1.5rem; /* 24px */
+  --font-size-body: 1rem; /* 16px */
+  --font-size-subtext: 0.875rem; /* 14px */
+
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-relaxed: 1.6;
+
+  /* Content measure */
+  --max-line-length: 72ch;
+
+  /* Alias legacy tokens to core theme tokens for convenience */
+  --color-bg-page: var(--bg);
+  --color-bg-surface: var(--card);
+  --color-bg-muted: var(--bg-muted);
+  --color-bg-contrast: var(--bg-contrast);
+
+  --color-border-subtle: var(--border-subtle);
+
+  --color-text-main: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-on-contrast: var(--text-on-contrast);
+
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-border: var(--accent-border);
+
+  --color-eco: var(--eco);
+  --color-eco-soft: var(--eco-soft);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-size-h1: clamp(3.75rem, 4.5vw, 4rem);
+  }
+}
+
+[data-theme="dark"] {
+  --bg: #020617;
+  --bg-muted: #020617;
+  --bg-contrast: #020617;
+  --card: #020617;
+
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-on-contrast: #f9fafb;
+
+  --accent: #22e6c8;
+  --accent-soft: rgba(34, 230, 200, 0.18);
+  --accent-border: rgba(34, 230, 200, 0.45);
+
+  --eco: #4ade80;
+  --eco-soft: rgba(74, 222, 128, 0.12);
+
+  --border-subtle: rgba(148, 163, 184, 0.4);
+
+  --shadow-soft: 0 28px 80px rgba(0, 0, 0, 0.55);
+  --shadow-subtle: 0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+

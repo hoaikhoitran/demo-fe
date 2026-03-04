@@ -89,7 +89,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
 const Testimonials: React.FC = () => {
   return (
     <section id="testimonials" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[80rem] w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
           <span className="inline-block bg-red-50 border border-red-200 text-red-700 text-sm font-semibold px-4 py-2 rounded-full mb-4">
