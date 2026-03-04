@@ -70,20 +70,27 @@ const Hero: React.FC = () => {
 
           {/* Search-style CTA row */}
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-stretch">
-            <div className="flex flex-1 items-center rounded-xl bg-white/80 px-4 py-3 shadow-sm ring-1 ring-gray-200 backdrop-blur-sm">
+            <a
+              href="https://en.wikipedia.org/wiki/Eco-Schools"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-1 items-center rounded-xl bg-white/80 px-4 py-3 shadow-sm ring-1 ring-gray-200 backdrop-blur-sm transition-all duration-200 hover:ring-[#00c9a7] hover:shadow-md cursor-pointer"
+            >
               <div className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100">
                 <span className="text-xs text-gray-500">🔍</span>
               </div>
               <p className="text-xs text-gray-500">
                 Discover eco collections and everyday essentials
               </p>
-            </div>
-            <button
-              type="button"
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/Eco-Schools"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-xl bg-[#00c9a7] px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#00b397] focus:outline-none focus:ring-2 focus:ring-[#00c9a7] focus:ring-offset-2"
             >
               Shop eco collections
-            </button>
+            </a>
           </div>
 
           <div className="mt-4 flex flex-wrap gap-6 text-sm text-gray-600">
@@ -137,21 +144,6 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* SVG wave divider */}
-      <div className="mt-10">
-        <svg
-          className="block w-full"
-          viewBox="0 0 1440 120"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="#ffffff"
-            d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,117.3C672,96,768,64,864,58.7C960,53,1056,75,1152,90.7C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-          />
-        </svg>
       </div>
     </section>
   );
